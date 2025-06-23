@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASIRA Properti Indonesia - Kavling Tanah Terbaik</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/nasira_logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/nasira_logo.png" alt="NASIRA Logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#plots">Kavling Tersedia</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+            <button class="whatsapp-btn" onclick="openWhatsApp()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                WhatsApp
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="badge">Investasi Terpercaya</span>
+            <h1>Investasi Kavling<br>Tanah Terbaik<br>di Indonesia</h1>
+            <p>
+                Temukan kavling tanah strategis dengan harga terjangkau dan potensi investasi tinggi. 
+                Lokasi premium, sertifikat lengkap, dan akses mudah untuk masa depan yang cerah.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn primary-btn" onclick="document.getElementById(\'plots\').scrollIntoView({ behavior: \'smooth\' })">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    Lihat Kavling Tersedia
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+                <button class="btn outline-btn" onclick="openWhatsApp()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                    Konsultasi Gratis
+                </button>
+            </div>
+            <div class="survey-cta-hero">
+                <h3>Survey Gratis Investasi Kavling</h3>
+                <p>Dapatkan rekomendasi kavling terbaik sesuai budget dan kebutuhan Anda</p>
+                <button class="btn survey-btn" onclick="openWhatsApp(\'\', true)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="M9.9 10.9 12 2l2.1 8.9"/><path d="M2 12h20"/><path d="m1.9 1.9 2.1 8.9L2 12l-2.1-8.9z"/><path d="m10.9 9.9 8.9 2.1-8.9 2.1L12 22l-2.1-8.9z"/></svg>
+                    Survey Gratis
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator"><div></div></div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Pencapaian Kami</span>
+                <h2>Dipercaya Ribuan Investor</h2>
+                <p>Pengalaman dan kepercayaan yang telah dibangun selama bertahun-tahun</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                    <h3>50+</h3>
+                    <p>Klien Puas</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M12 16.5c.97 0 1.75-.73 1.75-1.64 0-.9-.78-1.64-1.75-1.64S10.25 14 10.25 14.86c0 .91.78 1.64 1.75 1.64Z"/><path d="M12 2C8.5 2 5 4.5 5 9c0 5.5 7 13 7 13s7-7.5 7-13c0-4.5-3.5-7-7-7Z"/></svg></div>
+                    <h3>5+</h3>
+                    <p>Lokasi Tersedia</p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
+                    <h3>5+</h3>
+                    <p>Tahun Pengalaman</p>
+                </div>
+                <div class="stat-item">
+                    <div class="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+                    <h3>8-12%</h3>
+                    <p>ROI Rata-rata</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Plots Section -->
+    <section id="plots" class="plots-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Pilihan Terbaik</span>
+                <h2>Kavling Tersedia</h2>
+                <p>Pilihan kavling tanah terbaik dengan lokasi strategis dan harga kompetitif untuk investasi masa depan Anda</p>
+            </div>
+            <div class="plots-grid">
+                <!-- Plot Cards will be injected by JavaScript -->
+            </div>
+            <div class="survey-cta-plots">
+                <h3>Bingung Pilih Kavling yang Tepat?</h3>
+                <p>Dapatkan survey gratis dan konsultasi personal untuk menemukan kavling yang sesuai dengan budget dan tujuan investasi Anda</p>
+                <button class="btn survey-btn-lg" onclick="openWhatsApp(\'\', true)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="M9.9 10.9 12 2l2.1 8.9"/><path d="M2 12h20"/><path d="m1.9 1.9 2.1 8.9L2 12l-2.1-8.9z"/><path d="m10.9 9.9 8.9 2.1-8.9 2.1L12 22l-2.1-8.9z"/></svg>
+                    Mulai Survey Gratis Sekarang
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tentang NASIRA Properti Indonesia</h2>
+                <p>
+                    NASIRA Properti Indonesia adalah perusahaan terpercaya yang bergerak di bidang penjualan kavling tanah 
+                    dengan pengalaman lebih dari 10 tahun. Kami berkomitmen untuk menyediakan kavling tanah berkualitas 
+                    dengan lokasi strategis dan harga yang kompetitif.
+                </p>
+            </div>
+            <div class="about-grid">
+                <div class="about-item">
+                    <div class="about-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></div>
+                    <h3>Sertifikat Lengkap</h3>
+                    <p>Semua kavling dilengkapi dengan sertifikat SHM dan dokumen legal lengkap</p>
+                </div>
+                <div class="about-item">
+                    <div class="about-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M12 16.5c.97 0 1.75-.73 1.75-1.64 0-.9-.78-1.64-1.75-1.64S10.25 14 10.25 14.86c0 .91.78 1.64 1.75 1.64Z"/><path d="M12 2C8.5 2 5 4.5 5 9c0 5.5 7 13 7 13s7-7.5 7-13c0-4.5-3.5-7-7-7Z"/></svg></div>
+                    <h3>Lokasi Strategis</h3>
+                    <p>Kavling berlokasi di area strategis dengan akses mudah dan potensi berkembang</p>
+                </div>
+                <div class="about-item">
+                    <div class="about-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+                    <h3>Pelayanan Terbaik</h3>
+                    <p>Tim profesional siap membantu Anda menemukan kavling yang sesuai kebutuhan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Hubungi Kami</span>
+                <h2>Siap Membantu Anda</h2>
+                <p>Tim profesional kami siap membantu Anda menemukan kavling tanah impian dengan pelayanan terbaik</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h3>Informasi Kontak</h3>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2 3.18 2 2 0 0 1 4.08 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+                        <span>+62 812-3456-7890</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                        <span>WhatsApp: +62 812-3456-7890</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M12 16.5c.97 0 1.75-.73 1.75-1.64 0-.9-.78-1.64-1.75-1.64S10.25 14 10.25 14.86c0 .91.78 1.64 1.75 1.64Z"/><path d="M12 2C8.5 2 5 4.5 5 9c0 5.5 7 13 7 13s7-7.5 7-13c0-4.5-3.5-7-7-7Z"/></svg>
+                        <span>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Konsultasi Gratis</h3>
+                    <p>Dapatkan konsultasi gratis untuk investasi kavling tanah terbaik</p>
+                    <button class="btn primary-btn" onclick="openWhatsApp()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                        Mulai Konsultasi via WhatsApp
+                    </button>
+                </div>
+
+                <div class="contact-card survey-card">
+                    <h3>Survey Gratis</h3>
+                    <p>Analisis kebutuhan dan rekomendasi kavling yang tepat untuk Anda</p>
+                    <button class="btn survey-btn" onclick="openWhatsApp(\'\', true)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="M9.9 10.9 12 2l2.1 8.9"/><path d="M2 12h20"/><path d="m1.9 1.9 2.1 8.9L2 12l-2.1-8.9z"/><path d="m10.9 9.9 8.9 2.1-8.9 2.1L12 22l-2.1-8.9z"/></svg>
+                        Mulai Survey Sekarang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/nasira_logo.png" alt="NASIRA Logo" class="footer-logo">
+                    <p>Menyediakan kavling tanah berkualitas dengan lokasi strategis dan harga kompetitif untuk investasi masa depan yang cerah.</p>
+                    <div class="social-icons">
+                        <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></div>
+                        <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2 3.18 2 2 0 0 1 4.08 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></div>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#plots">Kavling Tersedia</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Kontak & Survey</h3>
+                    <ul>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2 3.18 2 2 0 0 1 4.08 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><span>+62 812-3456-7890</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M12 16.5c.97 0 1.75-.73 1.75-1.64 0-.9-.78-1.64-1.75-1.64S10.25 14 10.25 14.86c0 .91.78 1.64 1.75 1.64Z"/><path d="M12 2C8.5 2 5 4.5 5 9c0 5.5 7 13 7 13s7-7.5 7-13c0-4.5-3.5-7-7-7Z"/></svg><span>Jakarta, Indonesia</span></li>
+                    </ul>
+                    <button class="btn outline-btn" onclick="openWhatsApp()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                        WhatsApp
+                    </button>
+                    <button class="btn survey-btn" onclick="openWhatsApp(\'\', true)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="M9.9 10.9 12 2l2.1 8.9"/><path d="M2 12h20"/><path d="m1.9 1.9 2.1 8.9L2 12l-2.1-8.9z"/><path d="m10.9 9.9 8.9 2.1-8.9 2.1L12 22l-2.1-8.9z"/></svg>
+                        Survey Gratis
+                    </button>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 NASIRA Properti Indonesia. All rights reserved. | <span>Investasi Kavling Tanah Terpercaya</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
