@@ -49,18 +49,18 @@ document.addEventListener("DOMContentLoaded", function() {
             image: "assets/images/rajeg1.jpeg",
             features: ["Akses Tol Mudah", "Dekat Akses Bandara","Lokasi Pinggiran Kota", "Dekat Tol Kaltara", "Bebas Banjir", "Legalitas AJB"]
         },
-        // {
-        //     id: 4,
-        //     title: "Kavling Pesona Alam",
-        //     location: "Depok, Jawa Barat",
-        //     desk: "Contoh",
-        //     size: "350 m²",
-        //     pricePerMeter: "Rp 2.800.000/m²",
-        //     price: "Rp 980.000.000",
-        //     status: "Available",
-        //     image: "assets/images/land_plot_4.jpg",
-        //     features: ["Dekat Universitas", "Udara Sejuk", "Cocok untuk Hunian", "Sertifikat SHM"]
-        // }
+        {
+            id: 4,
+            title: "Kavling Hanjaong",
+            location: "Depok, Jawa Barat",
+            desk: "KAVLING NUANSA ALAM THE HANJAWONG VILLAS Kavling di ketinggian 400 mdpl , Lokasi Sukamakmur , Bogor Timur Legalitas SHM Bisa dibangun Permanen",
+            size: "100 m²",
+            pricePerMeter: "Rp 600.000/m²",
+            price: "Rp 60.000.000",
+            status: "Available",
+            image: "assets/images/Hanjaong1.jpeg",
+            features: ["Dekat Tempat Wisata", "Udara Sejuk", "Cocok untuk Hunian", "Ketinggian 400 mdpl", "Sertifikat SHM"]
+        }
     ];
 
     // Function to render plot cards
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // WhatsApp Integration
     window.openWhatsApp = function(productName = '', isSurvey = false) {
-        const whatsappNumber = "081539260777"; // Replace with your WhatsApp number
+        const whatsappNumber = "6281539260777"; // Replace with your WhatsApp number
         let message = "Halo, saya tertarik dengan informasi kavling";
 
         if (isSurvey) {
