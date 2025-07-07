@@ -51,15 +51,15 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         {
             id: 4,
-            title: "Kavling Hanjaong",
+            title: "Kavling Hajawong",
             location: "Depok, Jawa Barat",
-            desk: "KAVLING NUANSA ALAM THE HANJAWONG VILLAS Kavling di ketinggian 400 mdpl , Lokasi Sukamakmur , Bogor Timur Legalitas SHM Bisa dibangun Permanen",
+            desk: "Dengan View ICONIK GUNUNG HANJAWONG! Menghadirkan suasana Hunian/villa alami dengan menggabungkan arsitektur Rustic yang hangat dengan elemen kayu, batu alam, dan nuansa earthy ke dalam konsep yang menyatu dengan alam pegunungan",
             size: "100 m²",
-            pricePerMeter: "Rp 600.000/m²",
-            price: "Rp 60.000.000",
+            pricePerMeter: "Rp 680.000/m²",
+            price: "Rp 68.000.000",
             status: "Available",
-            image: "assets/images/Hanjaong1.jpeg",
-            features: ["Dekat Tempat Wisata", "Udara Sejuk", "Cocok untuk Hunian", "Ketinggian 400 mdpl", "Sertifikat SHM"]
+            image: "assets/images/hanjaong2.jpeg",
+            features: ["Row Jalan lebar 6 meter di cor beton", "Jaringan Listrik Underground (area atas)", "Tersedia Kawasan Wisata", "Free Rumput Jepang/gajah", "Tersedia Resto berkonsep Barn", "Zona Kuning Bisa dibangun Permanen", "Gerbang Masuk dan Gapura", "Area Berkuda dan Mini Zoo", "Gapura dan Kincir Angin", "Mini Golf dan Tennis Area", "Free Perawatan lahan 2 Tahun", "PJU dan dll."]
         }
     ];
 
