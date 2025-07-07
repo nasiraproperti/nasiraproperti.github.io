@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             id: 4,
             title: "Kavling Hajawong",
-            location: "Depok, Jawa Barat",
+            location: "Sukamakmur, Bogor Timur, Jawa Barat",
             desk: "Dengan View ICONIK GUNUNG HANJAWONG! Menghadirkan suasana Hunian/villa alami dengan menggabungkan arsitektur Rustic yang hangat dengan elemen kayu, batu alam, dan nuansa earthy ke dalam konsep yang menyatu dengan alam pegunungan",
             size: "100 m²",
             pricePerMeter: "Rp 680.000/m²",
